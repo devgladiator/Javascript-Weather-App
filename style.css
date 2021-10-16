@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background: #222;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 120%;
-    background-image: url(https://source.unsplash.com/1600x900/?weather);
+    background-image: url(https://source.unsplash.com/1600x900/?night);
 }
 .card{
     position: relative;
@@ -56,8 +58,12 @@ input.search-bar{
     font-size: 105%;
     width: calc(100% - 100px);
 }
-h1.temp{
+.city{
+    font-weight: 500;
+}
+.temp{
     margin: 0;
+    font-weight: 600;
 }
 .description {
     text-transform: capitalize;
@@ -78,4 +84,11 @@ h1.temp{
     position: absolute;
     top: 0;
     left: 20px;
+}
+.title{
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 10px 20px;
 }
